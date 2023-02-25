@@ -1,0 +1,208 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Red: hsl(0, 100%, 74%) 
+- Green: hsl(154, 59%, 51%)
+
+### Accent
+
+- Blue: hsl(248, 32%, 49%)
+
+### Neutral
+
+- Dark Blue: hsl(249, 10%, 26%) 
+- Grayish Blue: hsl(246, 25%, 77%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+font-family: 'Poppins', sans-serif;
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 500, 600, 700 */
+
+
+:root{
+    --ff: 'Poppins', sans-serif;
+    --cr: hsl(0, 100%, 74%);
+    --cg: hsl(154, 59%, 51%);
+    --cb: hsl(248, 32%, 49%);
+    --cdb: hsl(249, 10%, 26%);
+    --cgb: hsl(246, 25%, 77%);
+    --fs1: 1rem;
+    --fs2: 2rem;
+    --fs3: 2.5rem;
+    --fs4: 3rem;
+}
+
+body{
+    background: url(/img/bg-intro-desktop.png);
+    background-color: var(--cr);
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--ff);
+    padding: 2rem 10rem 2rem 10rem;
+    gap: 5rem;
+}
+
+.left-content{
+    color: white;
+}
+
+.left-content h1{
+    font-size: var(--fs3);
+    line-height: 3.4rem;
+    margin-bottom: 2rem;
+}
+
+.left-content p{
+    font-size: var(--fs1);
+    min-width: 500px;
+}
+
+.free-container{
+    color: white;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--cb);
+    box-shadow: 0 6px 0px 1px rgba(114, 111, 111, 0.548);
+}
+
+.free-container p{
+    font-size: 0.9rem;
+    color: var(--cgb);
+}
+
+.free-bold{
+    font-weight: 700;
+    color: white;
+}
+
+.right-content form{
+    margin-top: 1.5rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.right-content input{
+    border: 1px solid var(--cgb);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+    padding: 0.8rem 0 0.8rem 1.5rem;
+    width: 100%;
+}
+
+input:focus {
+    border-color: black;
+    outline: none;
+  }
+
+.right-content button{
+    margin: 0.8rem 0 0;
+    width: 100%;
+    background-color: var(--cg);
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 1px -3px 1px 1px rgba(18, 160, 93, 0.75) inset;
+    cursor: pointer;
+}
+
+#error, #error-lname, #error-email, #error-pass{
+    color: var(--cr);
+    font-weight: 600;
+    font-size: 0.7rem;
+    font-style: italic;
+    position: absolute;
+    right: 12.5rem;
+    display: none;
+}
+
+#error-img, #error-lname-img, #error-email-img, #error-pass-img{
+    position: absolute;
+    right: 12.5rem;
+    display: none;
+}
+
+#error{
+    top: 14.7rem;
+}
+
+#error-img{
+    top: 12.2rem;
+}
+
+#error-lname{
+    top: 20rem
+}
+
+#error-lname-img{
+    top: 17.4rem;
+}
+
+#error-email{
+    top: 25rem;
+}
+
+#error-email-img{
+    top: 22.5rem;
+}
+
+#error-pass{
+    top: 30rem;
+}
+
+#error-pass-img{
+    top: 27.5rem;
+}
+
+.right-content button:hover{
+    opacity: 70%;
+    transition: 300ms ease;
+}
+
+.right-content p{
+    margin-top: 0.5rem;
+    text-align: center;
+    color: var(--cgb);
+}
+
+.clicking{
+    font-size: 0.75rem;
+}
+
+.terms{
+    font-weight: 700;
+    color: var(--cr);
+    cursor: pointer;
+}

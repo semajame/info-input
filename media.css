@@ -1,0 +1,73 @@
+@media screen and (max-width: 1150px) {
+    
+.container{
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.left-content{
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.left-content h1{
+    font-size: var(--fs2);
+    line-height: 2.4rem;
+    margin: 2rem 0;
+}
+
+.left-content p{
+    font-size: var(--fs1);
+    min-width: 0px;
+}
+
+.right-content{
+    max-width: 600px;
+    margin-top: -2rem;
+}
+
+
+#error, #error-lname, #error-email, #error-pass{
+    right: 19.5rem;
+    display: none;
+}
+
+#error-img, #error-lname-img, #error-email-img, #error-pass-img{
+    position: absolute;
+    right: 19.7rem;
+    display: none;
+}
+
+#error{
+    top: 26rem;
+}
+
+#error-img{
+    top: 23.5rem;
+}
+
+#error-lname{
+    top: 31.4rem
+}
+
+#error-lname-img{
+    top: 28.8rem;
+}
+
+#error-email{
+    top: 36.5rem;
+}
+
+#error-email-img{
+    top: 34rem;
+}
+
+#error-pass{
+    top: 41.7rem;
+}
+
+#error-pass-img{
+    top: 39.3rem;
+}
+
+}
